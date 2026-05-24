@@ -17,7 +17,6 @@ Student_Data:
           Landmark: GPO
           Pincode: 500001
 
-
   - Student-2:
       S_Name: Mahi Reddy
       S_RollNumber: 16
@@ -32,6 +31,4 @@ Student_Data:
           Address_Line-1: RTC Cross Road, Hyderabad
           Address_Line-2: Near Sandhya Theater
           Landmark: RTC Metro Station
-          Pincode: 500004                      
-
-
+          Pincode: 500004
