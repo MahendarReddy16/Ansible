@@ -1,0 +1,47 @@
+// JavaScript Object Notation - APIs, web services
+
+{
+    "Student_Data":{
+        "Student-1": [
+        {
+            "S_Name": "Mahendar Reddy",
+            "S_RollNumber": 122,
+            "S_Course": "MCA",
+            "Addresses": {
+                "Present-Address": {
+                    "Address_Line-1": "Abids, Tilak Road, Hyderabad",
+                    "Address_Line-2": "Beside bank of Baroda",
+                    "Landmark": "GPO",
+                    "Pincode":500001
+                },
+                "Permenent-Address": {
+                    "Address_Line-1": "Abids, Tilak Road, Hyderabad",
+                    "Address_Line-2": "Beside bank of Baroda",
+                    "Landmark": "GPO",
+                    "Pincode":500001
+                }
+            }
+        },
+
+        {
+            "S_Name": "Mahi Reddy",
+            "S_RollNumber": 16,
+            "S_Course": "MBA",
+            "Addresses": {
+                "Present-Address": {
+                    "Address_Line-1": "RTC Cross Road, Hyderabad",
+                    "Address_Line-2": "Near Sandhya Theater",
+                    "Landmark": "RTC Metro Station",
+                    "Pincode":500004
+                },
+                "Permenent-Address": {
+                    "Address_Line-1": "RTC Cross Road, Hyderabad",
+                    "Address_Line-2": "Near Sandhya Theater",
+                    "Landmark": "RTC Metro Station",
+                    "Pincode":500004
+                }
+            }
+        }
+    ]
+    }
+}

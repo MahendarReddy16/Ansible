@@ -1,0 +1,43 @@
+<!-- eXtensible Markup Language - SOAP, configs, enterprise systems -->
+
+<student_Data>
+   <student_1>
+       <S_Name>Mahendar Reddy</S_Name>
+       <S_RollNumber>122</S_RollNumber>
+       <S_Course>MCA</S_Course>
+       <Addresses>
+           <Present_Address>
+               <Address_line-1>Abids, Tilak Road, Hyderabad</Address_line-1>
+               <Address_line-2>Beside bank of Baroda</Address_line-2>
+               <Landmark>GPO</Landmark>
+               <Pincode>500001</Pincode>
+           </Present_Address>
+           <Permanent_Address>
+               <Address_line-1>Abids, Tilak Road, Hyderabad</Address_line-1>
+               <Address_line-2>Beside bank of Baroda</Address_line-2>
+               <Landmark>GPO</Landmark>
+               <Pincode>500001</Pincode>
+           </Permanent_Address>
+       </Addresses>
+   </student_1>
+
+   <student_2>
+       <S_Name>Mahi Reddy</S_Name>
+       <S_RollNumber>16</S_RollNumber>
+       <S_Course>MBA</S_Course>
+       <Addresses>
+           <Present_Address>
+               <Address_line-1>RTC cross Road, Hyderabad</Address_line-1>
+               <Address_line-2>Near Sandhaya Theater</Address_line-2>
+               <Landmark>RTC Metro Station</Landmark>
+               <Pincode>500004</Pincode>
+           </Present_Address>
+           <Permenent_Address>
+               <Address_line-1>RTC cross Road, Hyderabad</Address_line-1>
+               <Address_line-2>Near Sandhaya Theater</Address_line-2>
+               <Landmark>RTC Metro Station</Landmark>
+               <Pincode>500004</Pincode>
+           </Permenent_Address>
+       </Addresses>
+   </student_2>
+</student_Data>
