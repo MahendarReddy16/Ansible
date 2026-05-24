@@ -7,16 +7,16 @@ Student_Data:
       S_Course: MCA
       Addresses:
       - type: Present-Address
-          Address_Line-1: Abids, Tilak Road, Hyderabad
-          Address_Line-2: Beside bank of Baroda
-          Landmark: GPO
-          Pincode: 500001
+        Address_Line-1: Abids, Tilak Road, Hyderabad
+        Address_Line-2: Beside bank of Baroda
+        Landmark: GPO
+        Pincode: 500001
 
       - type: Permanent-Address
-          Address_Line-1: Abids, Tilak Road, Hyderabad
-          Address_Line-2: Beside bank of Baroda
-          Landmark: GPO
-          Pincode: 500001
+        Address_Line-1: Abids, Tilak Road, Hyderabad
+        Address_Line-2: Beside bank of Baroda
+        Landmark: GPO
+        Pincode: 500001
 
 
   - Student-2:
@@ -25,14 +25,14 @@ Student_Data:
       S_Course: MBA
       Addresses:
       - type: Present-Address
-          Address_Line-1: RTC Cross Road, Hyderabad"
-          Address_Line-2: Near Sandhya Theater
-          Landmark: RTC Metro Station
-          Pincode: 500004
+        Address_Line-1: RTC Cross Road, Hyderabad"
+        Address_Line-2: Near Sandhya Theater
+        Landmark: RTC Metro Station
+        Pincode: 500004
       - type: Permanent-Address
-          Address_Line-1: RTC Cross Road, Hyderabad"
-          Address_Line-2: Near Sandhya Theater
-          Landmark: RTC Metro Station
-          Pincode: 500004                      
+        Address_Line-1: RTC Cross Road, Hyderabad"
+        Address_Line-2: Near Sandhya Theater
+        Landmark: RTC Metro Station
+        Pincode: 500004                      
 
 
