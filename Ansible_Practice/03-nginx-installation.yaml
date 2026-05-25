@@ -1,0 +1,9 @@
+- name: Installing the Nginx server
+  hosts: web
+  become: yes # taking sudo or root access
+  tasks:
+  - name: To install the nginx server
+    ansible.builtin.package: # hetrogenous module that can work for all
+      name: ansible
+      state: present
+
