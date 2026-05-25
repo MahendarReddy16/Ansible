@@ -1,0 +1,6 @@
+- name: Connecting to server
+  hosts: web
+  tasks:
+   - name: Connecting to variables from inventory
+     ansible.builtin.debug:
+       msg: "Hi All, I'm learning {{COURSE}} course, duration is {{DURATION}} and the trainer is {{TRAINER}} "
