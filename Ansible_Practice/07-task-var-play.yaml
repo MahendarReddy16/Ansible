@@ -1,0 +1,16 @@
+- name: Connecting to Server 
+  hosts: web
+  vars: # this are playbook task level
+    COURSE: "Devops with AWS"
+    DURATION: 120hrs
+    TRAINER: "Youtube teacher"
+  tasks:
+   - name: Variable declearation 
+     ansible.builtin.debug:
+       msg: "Hi All, I'm learning {{COURSE}} course, duration is {{DURATION}} and the trainer is {{TRAINER}} "
+
+   - name: Variable declearation 
+     vars:
+       TRAINER: "Self study"
+     ansible.builtin.debug:
+       msg: "Hi All, I'm learning {{COURSE}} course, duration is {{DURATION}} and the trainer is {{TRAINER}} "
