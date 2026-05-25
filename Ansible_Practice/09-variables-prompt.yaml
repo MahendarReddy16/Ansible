@@ -1,0 +1,13 @@
+- name: Connecting to Server 
+  hosts: web
+  vars_prompt:
+    - name: COURSE
+      prompt: Please enter the course name
+    - name: DURATION
+      prompt: Please enter the course duration
+    - name: TRAINER
+      prompt: Please enter the course Trainer 
+  tasks:
+   - name: Variables allign from the outside other file  
+     ansible.builtin.debug:
+       msg: "Hi All, I'm learning {{COURSE}} course, duration is {{DURATION}} and the trainer is {{TRAINER}} "
