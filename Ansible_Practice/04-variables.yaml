@@ -1,0 +1,6 @@
+- name: Connecting to the server to create variables
+  hosts: web
+  tasks:
+    - name: printing veriables given info
+      ansible.builtin.debug:
+        msg: " Hi All, I'm learning the Devops AWS course, Duration: 120mins, Trainer: Youtube"
