@@ -10,7 +10,11 @@
        msg: "Hi All, I'm learning {{COURSE}} course, duration is {{DURATION}} and the trainer is {{TRAINER}} "
 
    - name: Variable declearation 
-     vars:
+     vars: # this is task level
        TRAINER: "Self study"
+     ansible.builtin.debug:
+       msg: "Hi All, I'm learning {{COURSE}} course, duration is {{DURATION}} and the trainer is {{TRAINER}} "
+
+   - name: Variable declearation 
      ansible.builtin.debug:
        msg: "Hi All, I'm learning {{COURSE}} course, duration is {{DURATION}} and the trainer is {{TRAINER}} "
