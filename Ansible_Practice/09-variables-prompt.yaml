@@ -10,4 +10,4 @@
   tasks:
    - name: Variables allign from the outside other file  
      ansible.builtin.debug:
-       msg: "Hi All, I'm learning {{COURSE}} course, duration is {{DURATION}} and the trainer is {{TRAINER}} "
+      msg: "Hi All, I'm learning {{COURSE}} course, duration is {{DURATION}} and the trainer is {{TRAINER}} "
