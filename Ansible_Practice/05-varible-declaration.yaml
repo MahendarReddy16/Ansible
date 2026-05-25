@@ -1,10 +1,10 @@
 - name: Connecting to Server 
   hosts: web
   vars:
-  COURSE: "Devops with AWS"
-  DURATION: 120hrs
-  TRAINER: "Youtube teacher"
+    COURSE: "Devops with AWS"
+    DURATION: 120hrs
+    TRAINER: "Youtube teacher"
   tasks:
-   - name: Veriable declearation 
+   - name: Variable declearation 
      ansible.builtin.debug:
        msg: "Hi All, I'm learning {{COURSE}} course, duration is {{DURATION}} and the trainer is {{TRAINER}} "
