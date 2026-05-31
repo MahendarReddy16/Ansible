@@ -1,6 +1,5 @@
 - name: Creating inventory using the YAML 
-  myhosts:
-    hosts:
+  hosts:
 #     my_hosts_01:
 #        ansible_host: <IP>
       my_hosts_02:
