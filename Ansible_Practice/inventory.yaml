@@ -1,11 +1,11 @@
 - name: Creating inventory using the YAML 
   myhosts:
     hosts:
-#     my_hosts_01:
-#        ansible_host: <IP>
+      my_hosts_01:
+        ansible_host: localhost
       my_hosts_02:
          ansible_host: 172.31.29.107
-#         http_port: 443
+#        http_port: 443
   tasks:
     - name: ping the ansilbe YAML hosts
       ansible.builtin.ping:
