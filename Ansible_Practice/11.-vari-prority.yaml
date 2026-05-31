@@ -1,0 +1,20 @@
+- name: Connecting to the server and checking the veriable pickup priority
+  hosts: web
+  vars:
+      COURSE: "Devops with AWS"
+      DURATION: 120hrs
+      TRAINER: "Youtuber in Play level"
+  vars_prompt:
+      - name: COURSE
+        prompt: Enter the course you want to learning
+      - name: DURATION
+        prompt: Enter the total time of the course
+        private: false # non confidential
+      - name: TRAINER
+        prompt: Enter the course trainer name
+  tasks:
+    - name: executing the task of the variables
+      vars:
+        COURSE: "Youtuber in Task Level"
+      ansible.builtin.debug:
+          msg: "Hi All, I'm learning {{COURSE}} course, duration is {{DURATION}} and the trainer is {{TRAINER}}"
