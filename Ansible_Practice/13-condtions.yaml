@@ -8,4 +8,8 @@
   - name: Checking given number is grater than 10 or not
     ansible.builtin.debug:
         msg: "given number {{ number }} is grater than 10"
-    when: number > 10 # conditional expression
+    when: number | int > 10 # conditional expression
+  - name: Checking given number is less than or equal to 10
+    ansible.builtin.debug:
+        msg: "given number {{ number }} is less than or equal to 10"
+    when: number | int > 10 # conditional expression
