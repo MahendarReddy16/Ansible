@@ -6,6 +6,6 @@
     private: false 
   tasks:
   - name: Checking given number is grater than 10 or not
-    ansible.builtin,debug:
+    ansible.builtin.debug:
         msg: "given number {{ number }} is grater than 10"
     when: number > 10 # conditional expression
