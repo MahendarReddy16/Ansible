@@ -1,0 +1,32 @@
+- name: loops demo
+  hosts: local
+  tasks:
+  - name: print names
+    ansible.builtin.debug:
+      msg: "Hello {{ item }}"
+    loop:
+    - Mahi
+    - Maha
+    - Ramesh
+    - Suresh
+    - Vinay
+
+  - name: install packages
+    ansible.builtin.packages:
+      name: "{{ item }}" # installing only packages
+      state: present
+    loop:
+    - nginx
+    - httpd
+    - mysql
+
+#multiple works at a time
+  - name: installing and removing the packages
+    ansible.builtin.packages:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+    - { name: nignx , state: "absent" }
+    - { name: mysql , state: "absent" }
+    - { name: httpd , state: "absent" }
+    - { name: postfix , state: "present" }

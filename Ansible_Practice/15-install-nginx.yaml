@@ -1,0 +1,20 @@
+- name: install Nginx
+  hosts: web
+  become: yes
+  tasks:
+  - name: print the stats
+    ansible.builtin.debug:
+      msg: "{{ ansible_facts }}"
+
+  - name: ansible nginx if redhat
+    ansible.builtin.dnf:
+      name: nginx
+      start: present
+    when: ansible_os_family= "RedHat"
+  
+
+  - name: ansible nginx if Debain
+    ansible.builtin.apt:
+      name: nginx
+      start: present
+    when: ansible_os_family= "Debain"
