@@ -1,6 +1,6 @@
 - name: Condition to check a number
   hosts: local
-  Connection: local
+  connection: local
   vars_prompt:
   - name: number
     prompt: "Enter the number:"
