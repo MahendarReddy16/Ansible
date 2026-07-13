@@ -13,7 +13,7 @@
     - Vinay
 
   - name: install packages
-    ansible.builtin.packages:
+    ansible.builtin.package:
       name: "{{ item }}" # installing only packages
       state: present
     loop:
@@ -23,7 +23,7 @@
 
 #multiple works at a time
   - name: installing and removing the packages
-    ansible.builtin.packages:
+    ansible.builtin.package:
       name: "{{ item.name }}"
       state: "{{ item.state }}"
     loop:
