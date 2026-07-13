@@ -1,5 +1,6 @@
 - name: different types of datatypes
   hosts: local
+  Connection: local
   vars:
    course: "Devops with AWS" #string
    duration: 120hrs #number
