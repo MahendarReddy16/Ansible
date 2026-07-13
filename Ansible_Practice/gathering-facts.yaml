@@ -1,5 +1,6 @@
 - name: gathering facts # facts == variables
   hosts: local
+  connection: local
   become: yes
   tasks:
   - name: print the facts
