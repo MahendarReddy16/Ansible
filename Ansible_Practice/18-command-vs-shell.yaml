@@ -2,6 +2,6 @@
   hosts: web
   tasks:
     - name: execute the Command
-      ansible.builtin.command: ls -ltr > /tmp/output.txt
-      
+      ansible.builtin.shell: ls -ltr > /tmp/output.txt
+
       
