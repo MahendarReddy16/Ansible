@@ -2,7 +2,8 @@
   hosts: web
   tasks:
     - name: execute the Command
-      ansible.builtin.shell: ls -ltr > /tmp/output.txt
+      ansible.builtin.shell: ls -ltr > /tmp/output.txt #login to the server and execute command
+      #command module, just issues the command
 
     - name: checking the process
       ansible.builtin.shell: ps -ef | grep ssh
