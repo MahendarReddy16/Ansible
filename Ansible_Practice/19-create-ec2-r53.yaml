@@ -20,9 +20,9 @@
     loop: "{{ instances }}"
     register: ec2_instances
     
-  # - name: capturing the output
-  #   ansible.builtin.debug:
-  #     msg: "{{ ec2_instances }}"
+  - name: capturing the output
+    ansible.builtin.debug:
+      msg: "{{ ec2_instances }}"
 
   # - name: creating route53(r53) module
   # amazon.aws.route53:
