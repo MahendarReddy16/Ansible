@@ -18,9 +18,9 @@
 
   - name: start mysql server
     ansible.builtin.service:
-    name: mysqld
-    state: started
-    enabled: yes
+      name: mysqld
+      state: started
+      enabled: yes
 
   - name: Get MySQL version with non-default credentials
     ansible.mysql.mysql_info:
