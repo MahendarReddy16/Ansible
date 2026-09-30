@@ -24,7 +24,8 @@
     ansible.builtin.debug:
       msg: "{{ ec2_instances }}"
 
-  - name: creating route53(r53) module
+#private IP r53
+  - name: creating route53(r53) module using private ip address
     amazon.aws.route53:
       state: present
       zone: "{{ zone }}"
@@ -34,5 +35,18 @@
       value: "{{ item.instances[0].private_ip_address }}"
       wait: true
       overwrite: true
-
     loop: "{{ ec2_instances.results }}"
+
+#public IP r53
+  - name: creating route53(r53) module using public ip for frontend
+    amazon.aws.route53:
+      state: present
+      zone: "{{ zone }}"
+      record: "{{ item.item}}.{{ zone }}"
+      type: A
+      ttl: 1
+      value: "{{ item.instances[0].public_ip_address }}"
+      wait: true
+      overwrite: true
+    loop: "{{ ec2_instances.results }}"
+    when: item.item == "frontend"
