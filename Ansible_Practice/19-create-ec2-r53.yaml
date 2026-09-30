@@ -1,0 +1,37 @@
+- name: create ec2 and r53 records
+  hosts: web
+  vers:
+    subnet_id: "subnet-07f6f8fb81a9c43dd"  #replace with your subnet
+    sg_id: "sg-0f2b4bbc5ea25505d"
+    ami_id: "ami-0220d79f3f480ecf5"
+    instances:
+    - mysql
+    - backend
+    - frontend
+    zone: devsecoops.online
+  tasks:
+  - name: creating ec2 instance
+    amazon.aws.ec2_instance:
+      name: "{{ item }}"
+      vpc_subnet_id: "{{ subnet_id }}"
+      instance_type: "t3.micro"
+      security_group: "{{ sg_id }}"
+      image_id: "{{ ami_id }}"
+    loop: "{{ instances }}"
+    register: ec2_instances
+    
+  # - name: capturing the output
+  #   ansible.builtin.debug:
+  #     msg: "{{ ec2_instances }}"
+
+  # - name: creating route53(r53) module
+  # amazon.aws.route53:
+  #   state: present
+  #   zone: "{{ zone }}"
+  #   record: "{{ item.item}}.{{ zone }}"
+  #   type: A
+  #   ttl: 1
+  #   value: "{{ item.instances[0].private_ip_address }}"
+  #   wait: true
+  #   overwrite: true
+  #   loop: "{{ ec2_instances.results }}"
