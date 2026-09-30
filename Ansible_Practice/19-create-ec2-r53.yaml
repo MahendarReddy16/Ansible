@@ -10,6 +10,13 @@
     - frontend
     zone: devsecoops.online
   tasks:
+  - name: ansible install pymysql
+    ansible.builtin.pip:
+      name: 
+      - boto3
+      - botocore
+      executable: pip3.9
+      
   - name: creating ec2 instance
     amazon.aws.ec2_instance:
       name: "{{ item }}"
