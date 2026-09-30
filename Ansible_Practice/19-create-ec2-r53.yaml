@@ -1,6 +1,6 @@
 - name: create ec2 and r53 records
   hosts: web
-  vers:
+  vars:
     subnet_id: "subnet-07f6f8fb81a9c43dd"  #replace with your subnet
     sg_id: "sg-0f2b4bbc5ea25505d"
     ami_id: "ami-0220d79f3f480ecf5"
