@@ -31,7 +31,7 @@
 #     remote_src: yes
 
 - name: import tasks from common role
-  ansible.builtin.import_roles:
+  ansible.builtin.import_role:
    name: common
    tasks_from: pre-req
 
