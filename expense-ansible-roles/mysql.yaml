@@ -1,7 +1,7 @@
 - name: mysql configuration
   hosts: mysql
-  become: yes
+  become: yes # remote server
   vars_files:
-  - /var/expense/creds_db.yaml
+  - /var/expense/creds_db.yaml # ansible server
   roles:
   - db

@@ -1,5 +1,7 @@
 - name: backend configuration
   hosts: backend
   become: yes
+  vars_files:
+  - /var/expense/creds_db.yaml # ansible server
   roles:
   - backend
